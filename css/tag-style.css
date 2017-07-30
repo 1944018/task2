@@ -1,0 +1,44 @@
+.tag-input-ctn {
+  height: 2.0vh;
+  border: none;
+  padding: 2px 3px;
+  display: inline-block;
+  width: 500px;
+  border-radius: 3px;
+}
+.tag-input-ctn .input-tag {
+  padding: 5px 5px;
+  line-height: 12px;
+  font-size: 2.0vmin;
+  background-color: #e3eaf6;
+  display: inline-block;
+  float: left;
+  border-radius: 2px;
+  margin: 2px 5px 2px 0px;
+  border: 1px solid #a9b6d2;
+}
+.tag-input-ctn .input-tag .delete-tag {
+  display: inline-block;
+  font-size: 1.6vmin;
+  cursor: pointer;
+  padding: 0px 2px;
+}
+.tag-input-ctn .input-tag .delete-tag:hover {
+  background-color: #96b4d2;
+}
+
+.tag-input{
+  width: 100%;
+}
+
+.tag{
+  padding: 5px 5px;
+  line-height: 12px;
+  font-size: 2.0vmin;
+  background-color: #e3eaf6;
+  display: inline-block;
+  float: left;
+  border-radius: 2px;
+  margin: 2px 5px 2px 0px;
+  border: 1px solid #a9b6d2;
+}

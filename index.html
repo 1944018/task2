@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+    <link rel="stylesheet" href="css/tag-style.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-6 search">
+            <div class="table-output"></div>
+                <div class="send-request">
+                    <input type="text" class="person_name">
+                    <button class="button person-button">Find person</button>
+                    <br>
+                    <button class="btn-primary hidden-button">Show me some cool quote</button>
+                </div>
+        </div>
+        <div class="col-sm-6 add-user">
+            <form class="upload_form">
+                <input name="name" placeholder="Name" class="textbox name" required />
+                <input name="company" placeholder="Company" class="textbox company" required />
+                <input name="avatar" placeholder="Login" class="login textbox" required />
+                <input name="page_link" placeholder="Blog or personal page" class="textbox page_link" required />
+                <input name="emailaddress" placeholder="Укажите ваш Email!" class="textbox email" type="email" required />
+                <p class="subscribe"><b>Please, define your level:</b><br></p>
+                    <input type="radio" class="radio" name="degree" value="junior"> Junior<Br>
+                    <input type="radio" class="radio" name="degree" value="middle"> Middle<Br>
+                    <input type="radio" class="radio" name="degree" value="senior"> Senior<Br>
+                <div ng-app='tag-input' class="tag-input">
+                    <div ng-controller='FormCtrl'>
+                        <tag-input taglist='listone'></tag-input>
+                    </div>
+                </div>
+                <input id="select-town" class="textbox adress" type="text" size="50">
+                <button class="button">Send</button>
+            </form>
+        </div>
+        <div class="col-sm-12 localdata">
+        </div>
+    </div>
+<br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js'></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="js/request-users.js"></script>
+<script src="js/tags.js"></script>
+<script src="js/localstorage.js"></script>
+</body>
+</html>
